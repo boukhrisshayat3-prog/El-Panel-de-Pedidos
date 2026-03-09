@@ -65,7 +65,7 @@ const TablaPedidos = () => {
                             <td className="py-2 px-4 border-b bg-green-100">{pedido.cliente}</td>
                             <td className="py-2 px-4 border-b bg-blue-100">${pedido.total.toFixed(2)}</td> //tofixd nzido ghir joj ar9am 
                             <td className="py-2 px-4 border-b bg-gray-100">
-                                <span className={`px-3 py-1 rounded-full text-xs font-medium ${colorState.estado}`}>
+                                <span className={`px-3 py-1 rounded-full text-xs font-medium ${colorState[pedido.estado]}`}>
                                     {pedido.estado}
                                 </span>
                             </td>

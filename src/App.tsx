@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import TablaPedidos from './TablaPedidos/TablaPedidos'
+import TablaPedidos from './components/Pedidos/TablaPedidos'
 
 function App() {
   const [count, setCount] = useState(0)
