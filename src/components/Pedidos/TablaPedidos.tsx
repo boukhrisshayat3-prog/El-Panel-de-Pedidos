@@ -63,7 +63,9 @@ const TablaPedidos = () => {
                         <tr key={pedido.id}>
                             <td className="py-2 px-4 border-b bg-yellow-100">{pedido.id}</td>
                             <td className="py-2 px-4 border-b bg-green-100">{pedido.cliente}</td>
-                            <td className="py-2 px-4 border-b bg-blue-100">${pedido.total.toFixed(2)}</td> //tofixd nzido ghir joj ar9am 
+                            <td className="py-2 px-4 border-b bg-blue-100">
+                              ${pedido.total.toFixed(2)}
+                            </td>
                             <td className="py-2 px-4 border-b bg-gray-100">
                                 <span className={`px-3 py-1 rounded-full text-xs font-medium ${colorState[pedido.estado]}`}>
                                     {pedido.estado}
